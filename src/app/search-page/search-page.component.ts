@@ -26,5 +26,8 @@ export class SearchPageComponent implements OnInit {
    
     });
   }
+ sayhi(){
+console.log("hi");
 
+ }
 }
