@@ -7,7 +7,7 @@ import { from } from 'rxjs';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  
+
 form=new FormGroup({
   userNameFN:new FormControl('',Validators.required),
   userNameLN:new FormControl('',Validators.required),
@@ -25,20 +25,20 @@ return this.form.get('email');
 
 get password(){
   return this.form.get('password');
-  
+
   }
 
   get userNameFN(){
     return this.form.get('userNameFN');
-    
+
     }
     get userNameLN(){
       return this.form.get('userNameLN');
-      
+
       }
       get PhoneNumber(){
         return this.form.get('PhoneNumber');
-        
+
         }
 
   BdDays = [
@@ -125,9 +125,6 @@ get password(){
     document.getElementById('footer').style.display = 'none';
   }
 
-test() {
-  console.log('test')
-}
 
   ngOnDestroy() {
     document.getElementById('navbar').style.display = 'block';

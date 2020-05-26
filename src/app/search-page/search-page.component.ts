@@ -23,11 +23,7 @@ export class SearchPageComponent implements OnInit {
      this.toDate=prams.get('toDate');
      this.persons=prams.get('persons');
 
-   
+
     });
   }
- sayhi(){
-console.log("hi");
-
- }
 }
