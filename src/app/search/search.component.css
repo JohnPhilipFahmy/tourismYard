@@ -2,30 +2,32 @@
     height: 45px;
 }
 
-#searchBar{
-    border-radius: 35px;
-    width: 90%;
-    height:45px;
-    margin-left: auto;
+.row-width {
+  width: 749px;
+  border-radius: 35px;
+  /* width: 90%; */
+  height:45px;
+  margin-left: auto;
 margin-right: auto;
-padding: -10px;
+/* padding: -10px; */
 }
+
 .btn-group{height: 100%;}
 .dropdown-toggle{
     margin-right: -2px;
     width: 150px;
     background-color:blueviolet ;
-    
+
 }
 .countryBtn{
 
     border-radius: 0px;
-    border-top-left-radius:20px; 
+    border-top-left-radius:20px;
     border-bottom-left-radius: 20px;
 }
 .glyphicon{color:red;}
 .fromBtn ,.ToBtn{border-radius: 0px;
- 
+
     margin-left: -28px;
 }
 .glyphicon-calendar{

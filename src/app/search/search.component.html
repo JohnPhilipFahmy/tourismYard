@@ -1,36 +1,36 @@
-<div class="row " id="searchBar" style="width: 749px;">
+<div class="row row-width" >
 
   <form class="form-inline">
 
     <div class="form-group">
 
       <div class="btn-group" dropdown >
-        <button  id="button-basic" 
-          dropdownToggle 
+        <button  id="button-basic"
+          dropdownToggle
           type="button"
             class="btn btn-primary dropdown-toggle countryBtn"
                 aria-controls="dropdown-basic">
 
                 <span class="glyphicon glyphicon-globe">
-                </span> 
+                </span>
                 {{selectedCountery}}
                  <span class="caret"></span>
         </button>
         <ul id="dropdown-basic" *dropdownMenu
          class="dropdown-menu"
-            role="menu" 
+            role="menu"
             aria-labelledby="button-basic">
 
-          <li role="menuitem" 
+          <li role="menuitem"
            *ngFor="let countrey of counteries">
 
-            <a class="dropdown-item" 
+            <a class="dropdown-item"
             (click)="selectCountery(countrey)">
               <span class="glyphicon glyphicon-globe"></span>
               {{ countrey.text }}</a>
           </li>
         </ul>
-      
+
       </div>
     </div>
 
@@ -44,7 +44,7 @@
                 <span class="glyphicon glyphicon-map-marker">
 
                 </span>
-                {{selectedSpasificCountery}} 
+                {{selectedSpasificCountery}}
                 <span class="caret"></span>
         </button>
         <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
@@ -71,7 +71,7 @@
       >
      <button class="btn btn-primary fromBtn"
       (click)="dpFrom.toggle()"
-    
+
      >
      <span class="glyphicon glyphicon-calendar">
 
@@ -91,7 +91,7 @@
       class="form-control"
       placeholder="Datepicker"
       bsDatepicker
-    
+
       #dpto="bsDatepicker"
       bsDatepicker
       [(ngModel)]="To"
@@ -99,7 +99,7 @@
       style="width:0px;"
       />
 
-      <button class="btn btn-primary ToBtn" 
+      <button class="btn btn-primary ToBtn"
       (click)="dpto.toggle()"
 
       >
@@ -108,10 +108,10 @@
       {{To|date}}</button>
 
     </div>
-    <div class="form-group personDiv" 
+    <div class="form-group personDiv"
     >
 
-    <div class="form-group" 
+    <div class="form-group"
     >
       <span class="glyphicon glyphicon-user"
     ></span>
@@ -119,7 +119,7 @@
 
     <div class="form-group increamentDiv" >
       <span class=" glyphicon glyphicon-chevron-up"
-   
+
     (click)="increament()"
     ></span>
     </div>
@@ -144,7 +144,7 @@
       Capital:selectedSpasificCounteryId,
       fromDate:from,toDate:To,
       persons:counter}"
-       type="submit" 
+       type="submit"
        class="btn btn-warning searchBtn"
     >SEARCH</button>
   </form>

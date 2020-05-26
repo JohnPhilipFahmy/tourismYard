@@ -1,0 +1,13 @@
+.blog {
+  width: 85%;
+  margin: auto;
+}
+.list-group-item {
+  background-color: darkorange;
+  text-align: center;
+  border-radius: 0;
+}
+.w-100 {
+  width: 100%;
+}
+

@@ -1,16 +1,17 @@
 
 <div class="row container center-block p-top"  >
-    <h2><p class="text-warning mb-0">
+    <h2 class="text-warning mb-0">
         HOT DEALS
-        <br>  <br>
-    </p></h2>
-    <div class="col-sm-4 center-block" *ngFor="let trip of trips">
+    </h2>
+    <div class="col-sm-4 m-top-20 center-block" *ngFor="let trip of trips">
       <app-hot-deals-trip [tripData]="trip"></app-hot-deals-trip>
     </div>
      </div>
-     <br>  <br> <br>
-     <div class="row container center-block buttom-div"  >
-
-        <button [routerLink]="['/hot-offers']" [queryParams]="{id:2, title: 'hola'}" type="button" class="btn btn-warning"
-        style="background-color:  darkorange;border-radius: 0px;height: 40px;margin-left: 44%; margin-right: auto;">EPLORE MORE</button> </div>
+     <div class="row container buttom-div m-top-50 text-center">
+        <button
+        [routerLink]="['/hot-offers']"
+        [queryParams]="{id:2, title: 'hola'}"
+        type="button"
+        class="btn btn-warning custom-btn">EPLORE MORE</button>
+      </div>
 
