@@ -125,7 +125,9 @@ get password(){
     document.getElementById('footer').style.display = 'none';
   }
 
-
+test() {
+  console.log('test')
+}
 
   ngOnDestroy() {
     document.getElementById('navbar').style.display = 'block';
