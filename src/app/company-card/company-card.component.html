@@ -1,0 +1,104 @@
+<div class="container"
+style=" border: 2px solid blueviolet;
+border-radius:0% ;
+height: 500px;"
+>
+    <div class="row" >
+        <div class="col-sm-3" >
+            <img src="assets/images/logo(blue).jpg" 
+            class="img img-circle img-thumbnail center-block"
+            style="margin-top: 50px;margin-left: 20px;height: 200px;width: 200px;"
+             > 
+        <div class="container" style="padding-left:30px;
+         margin-top:25px ;">
+       
+          
+            <rating [(ngModel)]="rate"
+            [readonly]="isReadonly"
+            style="font-size: 50px;
+             color: darkorange;margin-left: -5px;
+             margin-top: 0px;
+             "
+            >
+        </rating> 
+         </div>
+         <div class="container" style="padding-left:30px;
+         margin-top:25px ;">
+        <h3 style="margin-top: 45px;font-weight: 700;">
+           <i> Followers  {{followers|number}}</i>
+        </h3>
+         </div>
+        </div>
+        <div class="col-sm-7" style="padding: 20px;padding-left: 30px;">
+        <h2 style="margin-top: 55px;font-weight: 700;">
+            {{companyName}}
+        </h2>
+        <br>
+        <h4 style="margin-top: -5px;font-weight: 300;">
+            {{location}}
+         
+        </h4>
+       
+
+<br>
+<h4 style="margin-top: 90px;font-weight: 100;width: 500px;">
+        {{description}}
+    </h4>
+        </div>
+        <div class="col-sm-2" >
+            <span class="glyphicon glyphicon-cog" 
+            style="font-size: 30px;
+             background-color:blueviolet ; 
+             color: white;
+             border-radius:0 ;
+             float: right;
+             height: 50px;
+             width: 40px;
+             margin-top: 49px;
+             margin-right: -5px;
+             padding-top: 8px;
+             padding-left:5px ;
+             "></span>
+            <div class="container"
+            style=" border: 1px solid blueviolet;
+            border-radius:0%;
+            font-weight: 600;
+
+             width: 150px;
+             height: 50px;
+             margin-top: 50px;
+             margin-right: -5px;
+             padding-left:10px;
+             padding-top:5px;
+             "
+            >
+           <h6 style="font-size: 18px;"> 
+            Edit Profile
+        </h6>
+           
+            </div>
+            
+
+
+
+            <h3>
+                <h3 style="background-color: darkorange;
+                float:right ;
+                margin-top:145px;
+                 margin-right: -5px;
+                 color:white;
+                 padding: 5px;
+                 ">
+                8.2
+            </h3>
+              <br> 
+              <h4 style="float: right; 
+              margin-top:164px;
+               margin-right: -45px;">
+                {{numOfRivew}} Reivew
+        </h4>
+            
+        </h3>
+        </div>
+      </div>
+  </div>

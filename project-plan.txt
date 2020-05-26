@@ -1,0 +1,36 @@
+Shared components:
+  -> navbar component
+  -> slider component
+  -> Search-travel now component
+  -> Footer component
+
+Home Page:
+  -> navbar component
+  -> slider component
+  -> Search-travel now component
+  -> hot deals component
+    -> Trip component * 3
+    -> explore more button
+  -> BEST SELLING TRIP component
+    -> Trip with animation component * 6
+    -> explore more button
+  -> LATTEST BLOG POSTS component
+    -> POSTS component * 3
+    -> explore more button
+  -> News Letter component
+  -> Footer component
+
+
+
+-------------- Media Query Dimentions ---------
+<!-- mobiles -->
+<!-- 0 : 767px -->
+
+<!-- Tables -->
+<!-- 768px : 991px -->
+
+<!-- Mid-screen -->
+<!-- 992px : 1199px -->
+
+<!-- large screens -->
+<!-- 1200: ???? -->

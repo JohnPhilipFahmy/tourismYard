@@ -1,0 +1,48 @@
+img{
+    padding:20px;
+}
+.imgDiv{
+    position:unset;
+    margin-top: -80px;
+
+}
+.numAndplaceIfo{
+    float: 0px;
+    margin-top: 20px;
+    margin-bottom:-50px;
+}
+.rivewRate{
+    background-color: darkorange;float:right ;
+    margin-top:20px; 
+    margin-right: 50px;
+   margin-bottom: 30px;
+
+}
+.numOfRivew{
+    float: right;
+     margin-top: 15px;
+      margin-right: -35px;
+      padding-top: 30px;
+}
+.rate{
+    
+   
+    margin: 0px;
+    color: darkorange;
+    font-size: 40px;
+    
+}
+.rateDiv{
+    padding-top: 30px;
+   
+}
+
+.tripDetail{
+    margin-top: 0px;padding-top: 0px;
+
+}
+li{
+    padding: 10px;
+    font-size: 20px;
+
+}

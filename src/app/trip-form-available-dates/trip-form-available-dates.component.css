@@ -1,0 +1,29 @@
+.border{
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 20px;  
+   width: 849px;
+   
+   float: right;
+   margin-right: 50px;
+   padding: 25px;
+}
+h4,h3{
+    padding: 0px;
+    
+    margin: 0px;
+    font-weight: 800;
+    color: darkblue;
+}
+h4{
+    font-weight: 500;
+    padding-top: 5px;
+}
+.form-control{
+    border: 1px solid rgb(92, 20, 20);
+    border-radius:15px;    
+}
+legend{
+    padding: 5px;
+   
+
+}

@@ -1,0 +1,65 @@
+<div class="container" style="padding-left:30px;padding-right: 40px;">
+<tabset  style="font-weight: 900;font-size: 19px;
+
+">
+    <tab heading="Schadual" customClass="customClass"
+    style="padding-top: 20px;"
+    >
+        <tabset  style="font-weight: 900;font-size: 19px;">
+         
+        
+            <tab *ngFor="let tabzOfDay of tabsofDays"
+                 [heading]="tabzOfDay.title"
+                 [customClass]="tabzOfDay.customClass"
+                 style="font-weight: 900; padding-top: 20px;"
+                 >
+                 <h3 style="padding-left: 15px; font-weight: 700;
+                 color: darkred;">
+                 {{tabzOfDay?.content2}}
+                </h3>
+                <h4 style="width: 500px; padding-left: 20px;">
+              {{tabzOfDay?.content1}}
+            </h4>
+            <h3 style="padding-left: 15px; font-weight: 700;
+            color: darkred;">
+            {{tabzOfDay?.content2}}
+           </h3>
+           <h4 style="width: 500px; padding-left: 20px;">
+         {{tabzOfDay?.content1}}
+       </h4>
+       <h3 style="padding-left: 15px; font-weight: 700;
+                 color: darkred;">
+                 {{tabzOfDay?.content2}}
+                </h3>
+                <h4 style="width: 500px; padding-left: 20px;">
+              {{tabzOfDay?.content1}}
+            </h4>
+            <h3 style="padding-left: 15px; font-weight: 700;
+                 color: darkred;">
+                 {{tabzOfDay?.content2}}
+                </h3>
+                <h4 style="width: 500px; padding-left: 20px;">
+              {{tabzOfDay?.content1}}
+            </h4>
+            </tab>
+          </tabset>
+    </tab>
+
+    <tab *ngFor="let tabz of tabs"
+         [heading]="tabz.title"
+         [customClass]="tabz.customClass"
+         style="font-weight: 900; padding-top: 20px;"
+         >
+         <h3 style="padding-left: 15px; font-weight: 700;
+         color: darkred;margin-bottom: 500px;">
+      {{tabz?.content}}
+      </h3>
+    </tab>
+  </tabset>
+  <button type="button" style="border-radius:8px;background-color:darkorange; width: 153px;height: 45px; 
+  padding: 0;margin-top: 20px;margin-right: 150px; float: right;" class="btn btn-warning">
+     <h4 style="font-weight: bold; font-weight: 1000; font-size: 23px;">
+      BOOK NOW
+  </h4>
+  </button>
+  </div>

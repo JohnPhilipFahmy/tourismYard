@@ -1,0 +1,71 @@
+.btn{
+    height: 45px;
+}
+
+#searchBar{
+    border-radius: 35px;
+    width: 90%;
+    height:45px;
+    margin-left: auto;
+margin-right: auto;
+padding: -10px;
+}
+.btn-group{height: 100%;}
+.dropdown-toggle{
+    margin-right: -2px;
+    width: 150px;
+    background-color:blueviolet ;
+    
+}
+.countryBtn{
+
+    border-radius: 0px;
+    border-top-left-radius:20px; 
+    border-bottom-left-radius: 20px;
+}
+.glyphicon{color:red;}
+.fromBtn ,.ToBtn{border-radius: 0px;
+ 
+    margin-left: -28px;
+}
+.glyphicon-calendar{
+    color:  saddlebrown;
+}
+.arrow{
+    padding-top: 8px;
+    height: 45px;
+    background-color:blueviolet ;
+}
+.glyphicon-arrow-right{
+
+    font-size:30px;
+    color: saddlebrown;
+    height: 50;
+}
+.personDiv{padding-top: 9px;
+    width: 85px;
+    height: 45px ;
+    background-color:blueviolet ;
+}
+.increamentDiv{
+    margin-top: -25px;
+    margin-left:20px;
+}
+.glyphicon-chevron-up{
+
+    color: saddlebrown;
+    font-size:20px;
+}
+.counter{
+    color: white;
+    font-size: 15px;
+}
+.searchBtn
+{
+    background-color:  darkorange;
+    width: 100px;
+    margin-right: -3px;
+    border-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

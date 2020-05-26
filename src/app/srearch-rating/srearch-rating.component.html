@@ -1,0 +1,46 @@
+
+
+
+
+  <div class="row" style="padding-top: 50px;padding-bottom: 70px;">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+        <div>
+            <rating [max]="10"
+            [(ngModel)]="y" [customTemplate]="tt"></rating>
+            <div class="card">
+              <b>(<i>Price:</i> {{y*500}} $)</b>
+            </div>
+            <ng-template #tt let-i="index" let-v="value">
+              <pre class="btn btn-{{i < v ? 'warning' : 'default'}}">
+                {{i < v ? '&#36;' : '&#36;'}}
+              </pre>
+            </ng-template>
+          </div>
+
+
+    </div>
+    <div class="col-sm-4">
+        <rating [(ngModel)]="rate"
+         [max]="max" [readonly]="isReadonly"
+                (onHover)="hoveringOver($event)"
+                 (onLeave)="resetStar()"
+                [titles]="['one','two','three']"
+                style="font-size: 20px;
+                color: darkorange;"
+                ></rating>
+
+
+        <span
+        style="font-size: 20px;"
+        class="label"
+              [ngClass]="{'label-warning': percent<30,
+               'label-info': percent>=30 && percent<70,
+               'label-success': percent>=70}"
+              [ngStyle]="{display: (overStar && !isReadonly) ? 'inline' : 'none'}">{{percent}}%</span>
+        </div>
+        <br>
+        <i style="margin-left: 20px;">
+                Rate: <b>{{rate*10}}%</b>
+            </i>
+  </div>

@@ -1,0 +1,5 @@
+<carousel [interval]="2000" [isAnimated]="true">
+  <slide *ngFor="let img of slides">
+    <img [src]="img" alt="first slide" style="display: block; width: 100%;">
+  </slide>
+</carousel>

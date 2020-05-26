@@ -1,0 +1,31 @@
+label ,input, div{font-size: large;}
+
+.firstName , .lastName {
+    width: 120px;
+    float: left;
+    margin-right: 30px;
+}
+.submitDiv{
+padding-top: 50px;
+margin-top: 0px;
+
+}
+
+.Bd-day, .Bd-year,.Bd-month
+{
+    width: 65px;
+    float: left;
+    margin-right: 30px;
+}
+.Bd-year{
+    width: 85px;
+
+}
+.emailErrorMsg,.userNameFNErrorMsg,.PhoneNumberErrorMsg{
+
+color: red;
+
+
+background-color: aqua;
+ 
+}
