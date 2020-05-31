@@ -1,9 +1,5 @@
-
-
-
-
-  <div class="row" style="padding-top: 50px;padding-bottom: 70px;">
-    <div class="col-sm-4"></div>
+<div class="row p-top p-bottom-50">
+   <div class="col-sm-4"></div>
     <div class="col-sm-4">
         <div>
             <rating [max]="10"
@@ -22,17 +18,17 @@
     </div>
     <div class="col-sm-4">
         <rating [(ngModel)]="rate"
-         [max]="max" [readonly]="isReadonly"
+                [max]="max"
+                [readonly]="isReadonly"
                 (onHover)="hoveringOver($event)"
                  (onLeave)="resetStar()"
                 [titles]="['one','two','three']"
-                style="font-size: 20px;
-                color: darkorange;"
-                ></rating>
+                class="rate-stars"
+                >
+              </rating>
 
 
         <span
-        style="font-size: 20px;"
         class="label"
               [ngClass]="{'label-warning': percent<30,
                'label-info': percent>=30 && percent<70,

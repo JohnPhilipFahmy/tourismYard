@@ -9,13 +9,34 @@
 .p-top {
   padding-top: 50px;
 }
+.no-p{
+  padding: 0px;
+}
 
 .p-bottom-30 {
   padding-bottom: 30px;
 }
+.p-bottom-50 {
+  padding-bottom: 50px;
+}
+.p-left-10 {
+  padding-left: 10px;
+}
+.p-left-30 {
+  padding-left: 30px;
+}
+.p-left-80 {
+  padding-left: 80px;
+}
 
 .m-top-10 {
   margin-top: 10px;
+}
+.m-right-5 {
+  margin-right: 5px;
+}
+.m-right-10 {
+  margin-right: 10px;
 }
 
 .m-top-20 {
@@ -35,7 +56,8 @@
 }
 
 .m-bottom-50 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+
 }
 
 .custom-btn {
@@ -46,4 +68,11 @@
 
 .white-text {
   color: #fff;
+}
+.no-border{ 
+  border-radius:0 ;
+}
+.float-left
+{
+    float: left;
 }

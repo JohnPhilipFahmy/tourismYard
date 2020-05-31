@@ -1,4 +1,4 @@
-label ,input, div{font-size: large;}
+ label ,input, div{font-size: large;}
 
 .firstName , .lastName {
     width: 120px;
@@ -14,12 +14,10 @@ margin-top: 0px;
 .Bd-day, .Bd-year,.Bd-month
 {
     width: 65px;
-    float: left;
-    margin-right: 30px;
 }
-.Bd-year{
+.Bd-year
+{
     width: 85px;
-
 }
 .emailErrorMsg,.userNameFNErrorMsg,.PhoneNumberErrorMsg{
 
@@ -28,4 +26,10 @@ color: red;
 
 background-color: aqua;
  
+}
+.center-item{
+
+    display: flex;
+     justify-content: center;
+    align-items: center; 
 }

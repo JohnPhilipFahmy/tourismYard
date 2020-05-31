@@ -1,4 +1,6 @@
-<div class="container p-top" style="padding-top: 50px; width: 500px; padding-bottom: 140px;">
+<div class="container p-top p-bottom-50 center-item"   >
+  <div class="row ">
+    <div class="col-sm-6 ">
 <form [formGroup]='form'>
     <fieldset>
       <legend>sign up</legend>
@@ -98,7 +100,7 @@
       <label for="sel1"> Birthday</label>
         <div class="form-group">
             
-          <select class="form-control Bd-day" id="day"
+          <select class="form-control Bd-day float-left m-right-10  " id="day"
          
           >
           
@@ -107,13 +109,13 @@
             </option>
           
           </select>
-          <select class="form-control Bd-month" id="month">
+          <select class="form-control Bd-month float-left m-right-10" id="month">
             <option  *ngFor="let BdMonth of BdMonths">
                 {{BdMonth.Month}}
                </option>
             
           </select>
-          <select class="form-control Bd-year" id="year">
+          <select class="form-control Bd-year float-left  " id="year">
             <option  *ngFor="let BdYear of BdYears">
                 {{BdYear.Year}}
                </option>
@@ -129,5 +131,7 @@
     </div>
     </fieldset>
   </form>
+  </div>
+  </div>
 </div>
 
