@@ -9,15 +9,24 @@
 .p-top {
   padding-top: 50px;
 }
+.p-top-10{
+  padding-top: 10px;
+}
 .no-p{
   padding: 0px;
 }
-
+.p-top-80
+{
+  padding-top: 80px;
+}
 .p-bottom-30 {
   padding-bottom: 30px;
 }
 .p-bottom-50 {
   padding-bottom: 50px;
+}
+.p-bottom-80 {
+  padding-bottom: 80px;
 }
 .p-left-10 {
   padding-left: 10px;
@@ -34,6 +43,9 @@
 }
 .m-right-5 {
   margin-right: 5px;
+}
+.m-right-5 {
+  margin-right: 4px;
 }
 .m-right-10 {
   margin-right: 10px;
@@ -63,7 +75,7 @@
 .custom-btn {
   background-color: darkorange;
   border-radius: 0px;
-  padding: 10px 20px;
+  padding: 10p  x 20px;
 }
 
 .white-text {
@@ -75,4 +87,11 @@
 .float-left
 {
     float: left;
+}
+
+.center-item{
+
+  display: flex;
+   justify-content: center;
+  align-items: center; 
 }

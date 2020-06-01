@@ -3,8 +3,10 @@
     <h2 class="text-warning mb-0">
         HOT DEALS
     </h2>
-    <div class="col-sm-4 m-top-20 center-block" *ngFor="let trip of trips">
-      <app-hot-deals-trip [tripData]="trip"></app-hot-deals-trip>
+    <div class="col-sm-4 m-top-20 center-block" 
+    *ngFor="let trip of trips">
+      <app-hot-deals-trip [tripData]="trip">
+      </app-hot-deals-trip>
     </div>
      </div>
      <div class="row container buttom-div m-top-50 text-center">

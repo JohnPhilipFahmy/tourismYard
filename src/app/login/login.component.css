@@ -1,9 +1,2 @@
 label ,input{font-size: large;}
 
-
-.center-item{
-
-    display: flex;
-     justify-content: center;
-    align-items: center; 
-}

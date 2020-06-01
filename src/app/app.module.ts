@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -47,6 +47,7 @@ import { HotOffersComponent } from './hot-offers/hot-offers.component';
 import { BestSellingPageComponent } from './best-selling-page/best-selling-page.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { TravellerPageComponent } from './traveller-page/traveller-page.component';
 
 
 @NgModule({
@@ -83,7 +84,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     HotOffersComponent,
     BestSellingPageComponent,
     LoginComponent,
-    SignUpComponent
+    SignUpComponent,
+    TravellerPageComponent
   ],
   imports: [
     BrowserModule,
@@ -91,6 +93,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),
     RatingModule.forRoot(),
+    PaginationModule.forRoot(),
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),

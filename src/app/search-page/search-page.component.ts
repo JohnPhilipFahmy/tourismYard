@@ -12,6 +12,18 @@ export class SearchPageComponent implements OnInit {
   fromDate;
   toDate;
   persons;
+
+  rotate = true;
+  maxSize = 7;
+  currentPage = 4;
+  page: number;
+  pageChanged(event: any): void {
+    this.page = event.page;
+   
+  }
+ 
+  
+
   constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {

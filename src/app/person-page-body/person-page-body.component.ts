@@ -10,6 +10,7 @@ export class PersonPageBodyComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

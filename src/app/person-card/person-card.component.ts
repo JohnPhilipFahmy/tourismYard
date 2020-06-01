@@ -11,7 +11,7 @@ export class PersonCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  personName="JohnPhilip";
+  personName="John Philip";
   rate: number = 3;
   isReadonly: boolean = true;
   tripsNum='50';

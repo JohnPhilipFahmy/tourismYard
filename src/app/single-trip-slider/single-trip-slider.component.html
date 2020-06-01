@@ -1,11 +1,12 @@
-<div class="container " 
-style="padding:40px">
-<carousel [noPause]="false" style="width: 600px;height: 600px;">
+<div class="container" >
+<carousel [noPause]="false" >
     <slide *ngFor="let img of imgs" >
-      <img [src]='img' alt="First slide" style="display: block; width: 100%;">
+      <img [src]='img' alt="First slide" 
+      >
       <div class="carousel-caption d-none d-md-block">
         <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <p>Nulla vitae elit libero,
+           a pharetra augue mollis interdum.</p>
       </div>
     </slide>
    

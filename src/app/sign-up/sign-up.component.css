@@ -1,4 +1,6 @@
- label ,input, div{font-size: large;}
+ label ,input, div{
+     font-size: large;
+    }
 
 .firstName , .lastName {
     width: 120px;
@@ -19,17 +21,12 @@ margin-top: 0px;
 {
     width: 85px;
 }
-.emailErrorMsg,.userNameFNErrorMsg,.PhoneNumberErrorMsg{
+.emailErrorMsg,.userNameFNErrorMsg,.PhoneNumberErrorMsg
+{
 
 color: red;
 
 
 background-color: aqua;
  
-}
-.center-item{
-
-    display: flex;
-     justify-content: center;
-    align-items: center; 
 }

@@ -1,6 +1,6 @@
 <div class="container p-top p-bottom-50 center-item"   >
   <div class="row ">
-    <div class="col-sm-6 ">
+  
 <form [formGroup]='form'>
     <fieldset>
       <legend>sign up</legend>
@@ -81,19 +81,17 @@
     
       <fieldset class="form-group">
         <legend>Gender</legend>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="male" id="GenderMale" value="option1" checked="">
-            male
+        <div class="radio-inline">
+          <label class="radio-inline">
+            <input type="radio"
+             name="optradio" >Male
+            </label>
+        </div>
+        <div class="radio-inline">
+          <label class="radio-inline">
+            <input type="radio" name="optradio">Female
           </label>
         </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="female" id="female" value="option2">
-            female
-          </label>
-        </div>
-      
       </fieldset>
     
 
@@ -132,6 +130,6 @@
     </fieldset>
   </form>
   </div>
-  </div>
+ 
 </div>
 

@@ -1,0 +1,18 @@
+tabset{
+font-size: 20px;
+padding: 10px;
+font-weight: 600;
+}
+h4{
+
+    padding-right: 400px;
+}
+.btn{
+float: right;
+color: #fff;
+background-color: #f0ad4e;
+padding: 5px;
+font-size: 25px;
+border-radius: 10px;
+
+}

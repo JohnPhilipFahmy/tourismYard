@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container p-bottom-80">
   <carousel [itemsPerSlide]="itemsPerSlide"
             [singleSlideOffset]="singleSlideOffset"
             [startFromIndex]="0"
@@ -6,10 +6,10 @@
     <slide *ngFor="let slide of slides; let index=index">
        
         <img [src]="slide.image" alt="image slide" style="padding:20px;display: block; width: 100%;">
-      <div class="carousel-caption">
-        <h4>Slide {{index}}</h4>
-      </div>
+              
     </slide>
   
   </carousel>
-  container
+
+
+  

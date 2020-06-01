@@ -1,0 +1,35 @@
+.numOfRivew{
+    float: right;
+   margin-top:-12px;
+    
+}
+.rate-num{
+    float: right;
+    background-color: darkorange;
+    margin-top:-40px;
+}
+.tripTitle{
+ font-weight: 1000;
+    float: left;
+    color: darkblue;
+    padding-right: 70px;
+}
+.glyphicon{
+color: darkorange;
+font-size: 45px;
+padding-right: 40px;
+float:right;
+margin-top: -40px;
+
+}
+.btn{
+
+    color: #fff;
+    background-color: #f0ad4e;
+    /* border-color: #eea236; */
+    padding: 5px;
+    font-size: 25px;
+    /* margin: 0px; */
+    border-radius: 10px;
+    margin-top: 15px;
+}

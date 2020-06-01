@@ -10,6 +10,7 @@ import { HotOffersComponent } from './hot-offers/hot-offers.component';
 import { BestSellingPageComponent } from './best-selling-page/best-selling-page.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
+import { TravellerPageComponent } from './traveller-page/traveller-page.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,8 @@ const routes: Routes = [
   {path: 'signUp', component: SignUpComponent},
   {path: 'logIn', component: LoginComponent},
   {path: 'single-trip/:id', component: SingleTripPageComponent},
+  {path: 'traveller-Page', component: TravellerPageComponent},
+
 ];
 
 @NgModule({
