@@ -49,6 +49,12 @@ import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TravellerPageComponent } from './traveller-page/traveller-page.component';
 import { CompanyPageComponent } from './company-page/company-page.component';
+import { AddTripFormComponent } from './add-trip-form/add-trip-form.component';
+import { TripFormAccommodationComponent } from './trip-form-accommodation/trip-form-accommodation.component';
+import { TripFormTripsComponent } from './trip-form-trips/trip-form-trips.component';
+import { TripFormTransportationComponent } from './trip-form-transportation/trip-form-transportation.component';
+import { TripFormPriceComponent } from './trip-form-price/trip-form-price.component';
+import { TripFormPaymentComponent } from './trip-form-payment/trip-form-payment.component';
 
 
 @NgModule({
@@ -87,7 +93,13 @@ import { CompanyPageComponent } from './company-page/company-page.component';
     LoginComponent,
     SignUpComponent,
     TravellerPageComponent,
-    CompanyPageComponent
+    CompanyPageComponent,
+    AddTripFormComponent,
+    TripFormAccommodationComponent,
+    TripFormTripsComponent,
+    TripFormTransportationComponent,
+    TripFormPriceComponent,
+    TripFormPaymentComponent
   ],
   imports: [
     BrowserModule,

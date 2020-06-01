@@ -1,29 +1,36 @@
-.border{
+.container {
     border: 1px solid rgb(92, 20, 20);
-    border-radius: 20px;  
-   width: 849px;
-   
-   float: right;
-   margin-right: 50px;
-   padding: 25px;
+    border-radius: 20px;
+    padding: 25px;
 }
-h4,h3{
+
+.col-sm-6 {
     padding: 0px;
-    
+    padding-bottom: 20px;
+}
+
+h4,
+h3 {
     margin: 0px;
     font-weight: 800;
     color: darkblue;
+    padding: 5px;
 }
-h4{
-    font-weight: 500;
+
+h4 {
     padding-top: 5px;
 }
-.form-control{
-    border: 1px solid rgb(92, 20, 20);
-    border-radius:15px;    
-}
-legend{
-    padding: 5px;
-   
 
+.form-control {
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 15px;
+}
+
+legend {
+    padding: 5px;
+}
+
+.glyphicon-plus-sign {
+    font-size: 35px;
+    color: darkorange;
 }

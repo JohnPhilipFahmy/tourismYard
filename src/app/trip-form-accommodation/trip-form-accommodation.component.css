@@ -1,0 +1,22 @@
+.container {
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 20px;
+}
+
+.glyphicon-plus-sign {
+    font-size: 35px;
+    color: darkorange;
+    padding: 15px 0px 0px 15px;
+}
+
+h4,
+h3 {
+    margin: 0px;
+    font-weight: 800;
+    color: darkblue;
+    padding: 5px;
+}
+
+.title-text {
+    padding-top: 15px;
+}

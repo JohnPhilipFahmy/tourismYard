@@ -12,6 +12,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
 import { TravellerPageComponent } from './traveller-page/traveller-page.component';
 import { CompanyPageComponent } from './company-page/company-page.component';
+import { AddTripFormComponent } from './add-trip-form/add-trip-form.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'logIn', component: LoginComponent},
   {path: 'single-trip/:id', component: SingleTripPageComponent},
   {path: 'traveller-Page', component: TravellerPageComponent},
+  {path: 'Add-trip', component: AddTripFormComponent},
   {path: 'company-page', component: CompanyPageComponent}
 ];
 

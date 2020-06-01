@@ -1,14 +1,8 @@
-.border{
+.container {
     border: 1px solid rgb(92, 20, 20);
-    border-radius: 20px;  
-   width: 850px;
-   float: right;
-   margin-right: 50px;
-   padding: 25px;
+    border-radius: 20px;
 }
-h3{
-    padding: 0px;
-    margin: 0px;
-    font-weight: 500;
+
+h3 {
     color: darkblue;
 }

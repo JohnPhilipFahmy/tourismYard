@@ -1,36 +1,35 @@
-
-  <nav class="navbar navbar-light bg-light navbar-fixed-top "
-   (scroll)="onWindowScroll($event);" 
-   id="navbar"
-   >
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<nav class="navbar navbar-light bg-light navbar-fixed-top " (scroll)="onWindowScroll($event);" id="navbar">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand white-text" [routerLink]="['']" >TourismYard</a>
+            <a class="navbar-brand white-text" [routerLink]="['']">TourismYard</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+            <ul class="nav navbar-nav navbar-right ">
+                <li><a [routerLink]="['/Add-trip']" class="white-text">Add trip</a></li>
+                <li>
+                    <a [routerLink]="['/traveller-Page']" class="white-text">
+                        <i class="glyphicon glyphicon-user"></i>
+                    </a>
+                </li>
+
+                <li><a [routerLink]="['/how-it-work']" class="white-text">How It Work</a></li>
+                <li><a [routerLink]="['/blog']" class="white-text">Blog</a></li>
+                <li><a [routerLink]="['/signUp']" class="white-text">Signup</a></li>
+                <li><a [routerLink]="['/logIn']" class="white-text">Login</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-     
-
-      <ul class="nav navbar-nav navbar-right ">
-        
-        <li><a [routerLink]="['/traveller-Page']"
-           class="white-text">
-          <i class="glyphicon glyphicon-user"></i>
-          </a></li>
-        
-        <li><a [routerLink]="['/how-it-work']" class="white-text">How It Work</a></li>
-        <li><a [routerLink]="['/blog']" class="white-text">Blog</a></li>
-        <li><a [routerLink]="['/signUp']" class="white-text">Signup</a></li>
-        <li><a [routerLink]="['/logIn']" class="white-text">Login</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    <!-- /.container-fluid -->
 </nav>

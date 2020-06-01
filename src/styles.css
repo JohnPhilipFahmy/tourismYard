@@ -1,103 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 /* body { padding-top: 50px; } */
+
 
 /* body {
   height: 5000px;
 } */
 
 .p-top {
-  padding-top: 50px;
+    padding-top: 50px;
 }
-.p-top-10{
-  padding-top: 10px;
+
+.p-top-10 {
+    padding-top: 10px;
 }
-.p-top-30{
-  padding-top: 30px;
+
+.p-top-30 {
+    padding-top: 30px;
 }
-.no-p{
-  padding: 0px;
+
+.no-p {
+    padding: 0px;
 }
-.p-top-80
-{
-  padding-top: 80px;
+
+.p-top-80 {
+    padding-top: 80px;
 }
+
 .p-bottom-30 {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
+
 .p-bottom-50 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
+
 .p-bottom-80 {
-  padding-bottom: 80px;
+    padding-bottom: 80px;
 }
+
 .p-left-10 {
-  padding-left: 10px;
+    padding-left: 10px;
 }
+
 .p-left-30 {
-  padding-left: 30px;
+    padding-left: 30px;
 }
+
+.p-right-30 {
+    padding-right: 30px;
+}
+
 .p-left-50 {
-  padding-left: 50px;
+    padding-left: 50px;
 }
+
 .p-left-80 {
-  padding-left: 80px;
+    padding-left: 80px;
 }
 
 .m-top-10 {
-  margin-top: 10px;
+    margin-top: 10px;
 }
+
 .m-right-5 {
-  margin-right: 5px;
+    margin-right: 5px;
 }
+
 .m-right-5 {
-  margin-right: 4px;
+    margin-right: 4px;
 }
+
 .m-right-10 {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .m-top-20 {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .m-top-30 {
-  margin-top: 30px;
+    margin-top: 30px;
 }
 
 .m-top-50 {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .m-bottom-30 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .m-bottom-50 {
-  margin-bottom: 50px;
-
+    margin-bottom: 50px;
 }
 
 .custom-btn {
-  background-color: darkorange;
-  border-radius: 0px;
-  padding: 10p  x 20px;
+    background-color: darkorange;
+    border-radius: 0px;
+    padding: 10p x 20px;
 }
 
 .white-text {
-  color: #fff;
+    color: #fff;
 }
-.no-border{ 
-  border-radius:0 ;
+
+.no-border {
+    border-radius: 0;
 }
-.float-left
-{
+
+.float-left {
     float: left;
 }
 
-.center-item{
-
-  display: flex;
-   justify-content: center;
-  align-items: center; 
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

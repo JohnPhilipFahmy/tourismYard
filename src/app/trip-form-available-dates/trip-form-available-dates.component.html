@@ -1,229 +1,176 @@
-<div class="container border">
+<div class="p-top">
+    <div class="container">
 
-    <legend>
-        <h3 style="float: left; margin-right: 30px;">
-            Available Dates
-        </h3>
-        
-            <i class="glyphicon glyphicon-plus-sign"
-             style="font-size: 35px;
-            margin-top: -5px;
-            margin-left: -15px;
-             color: darkorange;
-             "
-             
-             ></i>
+        <legend>
+            <h3 class="float-left">
+                Available Dates
+            </h3>
 
-        
+            <i class="glyphicon glyphicon-plus-sign">
+        </i>
         </legend>
 
-        <div class="row" >
-            <div class="col-sm-12"  style="padding: 0px;">
-                <div class="col-sm-6" style="padding: 10px;">
-                    <legend>
-                        <h3>Starting From</h3></legend>     
+
+        <div>
+            <div class="col-sm-6">
+                <legend>
+                    <h3>Starting From</h3>
+                </legend>
+                <form class="form-inline">
                     <div class="form-group">
-                        <label for="Title" style="float: left;margin-right: 5px;">
-                            <h4 style=" margin-left: 
-                            15px; margin-right: 5px;">
-                            Day
-                             </h4> 
-                            </label>
-                            <select 
-                            class="form-control" 
-                            id="exampleSelect1"
-                            style="width: 65px;
-                            float: left;
-                            margin-right: 5px;">
-                              <option *ngFor="let day of days">{{day}}</option> 
-                            </select>
-                
-                            <label for="Title" style="float: left;margin-right: 5px;">
-                                <h4 
-                                style="margin-right: 5px;">
-                                    Month 
-                                </h4> 
-                            </label>
-                                <select 
-                                class="form-control" 
-                                id="exampleSelect1"
-                                style="width: 65px;
-                                float: left;
-                                margin-right: 5px;">
-                                  <option *ngFor="let month of months">{{month}}</option> 
-                                </select>
-                                <label for="Title" style="float: left;margin-right: 5px;">
-                                    <h4 style=" margin-right:5px;">
-                                        Year 
-                                    </h4> 
-                                </label>
-                                    <select 
-                                    class="form-control" 
-                                    id="exampleSelect1"
-                                    style="width: 80px;
-                                    float: left;">
-                                      <option *ngFor="let year of years">
-                                          {{year}}</option> 
-                                    </select>
-                        </div>
-                
-                </div>  
-                <div class="col-sm-6" style="padding: 10px;">
-                    <legend >
-                        <h3>Ending IN</h3></legend> 
-                    <div class="form-group" >
-                        <label for="Title" style="float: left;margin-right: 5px;">
-                            <h4 style=" margin-left: 
-                            15px; margin-right: 5px;">
-                            Day
-                             </h4> 
-                            </label>
-                            <select 
-                            class="form-control" 
-                            id="exampleSelect1"
-                            style="width: 65px;
-                            float: left;
-                            margin-right: 5px;">
-                              <option *ngFor="let day of days">{{day}}</option> 
-                            </select>
-                
-                            <label for="Title" style="float: left;margin-right: 5px;">
-                                <h4 
-                                style="margin-right: 5px;">
-                                    Month 
-                                </h4> 
-                            </label>
-                                <select 
-                                class="form-control" 
-                                id="exampleSelect1"
-                                style="width: 65px;
-                                float: left;
-                                margin-right: 5px;">
-                                  <option *ngFor="let month of months">{{month}}</option> 
-                                </select>
-                                <label for="Title" style="float: left;margin-right: 5px;">
-                                    <h4 style=" margin-right:5px;">
-                                        Year 
-                                    </h4> 
-                                </label>
-                                    <select 
-                                    class="form-control" 
-                                    id="exampleSelect1"
-                                    style="width: 80px;
-                                    float: left;">
-                                      <option *ngFor="let year of years">
-                                          {{year}}</option> 
-                                    </select>
-                        </div>
-                
-                </div>
-        
+
+                        <label for="Title">
+                    <h4>
+                        Day
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let day of days">
+                        {{day}}
+                    </option>
+                </select>
+
+                        <label for="Title">
+                    <h4>
+                        Month
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let month of months">{{month}}</option>
+                </select>
+                        <label for="Title">
+                    <h4>
+                        Year
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let year of years">
+                        {{year}}</option>
+                </select>
+                    </div>
+                </form>
             </div>
-            <div class="col-sm-12"  style="padding: 0px; padding-top: 20px;">
-                <div class="col-sm-6" style="padding: 10px;">
-                    <legend>
-                        <h3>Starting From</h3></legend>   
+
+
+            <div class="col-sm-6">
+                <legend>
+                    <h3>Ending IN</h3>
+                </legend>
+                <form class="form-inline">
                     <div class="form-group">
-                        <label for="Title" style="float: left;margin-right: 5px;">
-                            <h4 style=" margin-left: 
-                            15px; margin-right: 5px;">
+
+                        <label for="Title">
+                        <h4>
                             Day
-                             </h4> 
-                            </label>
-                            <select 
-                            class="form-control" 
-                            id="exampleSelect1"
-                            style="width: 65px;
-                            float: left;
-                            margin-right: 5px;">
-                              <option *ngFor="let day of days">{{day}}</option> 
-                            </select>
-                
-                            <label for="Title" style="float: left;margin-right: 5px;">
-                                <h4 
-                                style="margin-right: 5px;">
-                                    Month 
-                                </h4> 
-                            </label>
-                                <select 
-                                class="form-control" 
-                                id="exampleSelect1"
-                                style="width: 65px;
-                                float: left;
-                                margin-right: 5px;">
-                                  <option *ngFor="let month of months">{{month}}</option> 
-                                </select>
-                                <label for="Title" style="float: left;margin-right: 5px;">
-                                    <h4 style=" margin-right:5px;">
-                                        Year 
-                                    </h4> 
-                                </label>
-                                    <select 
-                                    class="form-control" 
-                                    id="exampleSelect1"
-                                    style="width: 80px;
-                                    float: left;">
-                                      <option *ngFor="let year of years">
-                                          {{year}}</option> 
-                                    </select>
-                        </div>
-                
-                </div>  
-                <div class="col-sm-6" style="padding: 10px;">
-                    <legend >
-                        <h3>Ending IN</h3></legend> 
-                    <div class="form-group">
-                        <label for="Title" style="float: left;margin-right: 5px;">
-                            <h4 style=" margin-left: 
-                            15px; margin-right: 5px;">
-                            Day
-                             </h4> 
-                            </label>
-                            <select 
-                            class="form-control" 
-                            id="exampleSelect1"
-                            style="width: 65px;
-                            float: left;
-                            margin-right: 5px;">
-                              <option *ngFor="let day of days">{{day}}</option> 
-                            </select>
-                
-                            <label for="Title" style="float: left;margin-right: 5px;">
-                                <h4 
-                                style="margin-right: 5px;">
-                                    Month 
-                                </h4> 
-                            </label>
-                                <select 
-                                class="form-control" 
-                                id="exampleSelect1"
-                                style="width: 65px;
-                                float: left;
-                                margin-right: 5px;">
-                                  <option *ngFor="let month of months">{{month}}</option> 
-                                </select>
-                                <label for="Title" style="float: left;margin-right: 5px;">
-                                    <h4 style=" margin-right:5px;">
-                                        Year 
-                                    </h4> 
-                                </label>
-                                    <select 
-                                    class="form-control" 
-                                    id="exampleSelect1"
-                                    style="width: 80px;
-                                    float: left;">
-                                      <option *ngFor="let year of years">
-                                          {{year}}</option> 
-                                    </select>
-                        </div>
-                
-                </div>
-        
+                        </h4>
+                    
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let day of days">
+                        {{day}}
+                    </option>
+                </select>
+
+                        <label for="Title">
+                    <h4>
+                        Month
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let month of months">{{month}}</option>
+                </select>
+                        <label for="Title">
+                    <h4>
+                        Year
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let year of years">
+                        {{year}}</option>
+                </select>
+                    </div>
+                </form>
             </div>
-          </div>
-         
-    
-  </div>
- 
-   
-    
+
+        </div>
+        <div>
+            <div class="col-sm-6">
+                <legend>
+                    <h3>Starting From</h3>
+                </legend>
+                <form class="form-inline">
+                    <div class="form-group">
+
+                        <label for="Title">
+                        <h4>
+                            Day
+                        </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let day of days">
+                        {{day}}
+                    </option>
+                </select>
+
+                        <label for="Title">
+                    <h4>
+                        Month
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let month of months">{{month}}</option>
+                </select>
+                        <label for="Title">
+                    <h4>
+                        Year
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let year of years">
+                        {{year}}</option>
+                </select>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="col-sm-6">
+                <legend>
+                    <h3>Ending IN</h3>
+                </legend>
+                <form class="form-inline">
+                    <div class="form-group">
+
+                        <label for="Title">
+                        <h4>
+                            Day
+                        </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let day of days">
+                        {{day}}
+                    </option>
+                </select>
+                        <label for="Title">
+                    <h4>
+                        Month
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let month of months">{{month}}</option>
+                </select>
+                        <label for="Title">
+                    <h4>
+                        Year
+                    </h4>
+                </label>
+                        <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let year of years">
+                        {{year}}</option>
+                </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
