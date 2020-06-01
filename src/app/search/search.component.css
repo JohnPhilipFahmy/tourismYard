@@ -12,7 +12,7 @@ margin-right: auto;
 /* padding: -10px; */
 }
 
-.btn-group{height: 100%;}
+
 .dropdown-toggle{
     margin-right: -2px;
     width: 150px;
@@ -66,7 +66,6 @@ margin-right: auto;
 {
     background-color:  darkorange;
     width: 100px;
-    margin-right: -3px;
     border-radius: 0px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;

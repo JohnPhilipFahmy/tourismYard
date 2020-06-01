@@ -9,7 +9,9 @@
         
     </div>
     <div class="col-sm-3 p-top">
-        <img src="assets/images/logo(blue).jpg" class="img img-circle img-thumbnail profile-img">
+        <img [routerLink]="['/company-page']"
+       src="assets/images/logo(blue).jpg"
+         class="img img-circle img-thumbnail profile-img">
         <div class="p-top-10">
             <i class="glyphicon glyphicon-star"></i>
             <i class=" glyphicon glyphicon-camera"></i>
@@ -24,7 +26,8 @@
             <i class=" glyphicon glyphicon-camera"></i>
             <div class="rate-div  m-top-10">
 
-                <rating [(ngModel)]="rate" [readonly]="isReadonly" class="rate">
+                <rating [(ngModel)]="rate" 
+                [readonly]="isReadonly" class="rate">
                 </rating>
 
             </div>

@@ -48,6 +48,7 @@ import { BestSellingPageComponent } from './best-selling-page/best-selling-page.
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { TravellerPageComponent } from './traveller-page/traveller-page.component';
+import { CompanyPageComponent } from './company-page/company-page.component';
 
 
 @NgModule({
@@ -85,7 +86,8 @@ import { TravellerPageComponent } from './traveller-page/traveller-page.componen
     BestSellingPageComponent,
     LoginComponent,
     SignUpComponent,
-    TravellerPageComponent
+    TravellerPageComponent,
+    CompanyPageComponent
   ],
   imports: [
     BrowserModule,

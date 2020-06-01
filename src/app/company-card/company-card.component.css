@@ -1,21 +1,59 @@
-.img{
-    border: 1px solid blueviolet;
-    
+.container {
+    border: 1px solid darkblue;
 }
-.glyphicon{
-    border: 1px solid blueviolet;
-    border-radius:50% ;
 
+.img {
+    border: 1px solid darkblue;
+    height: 200px;
+    width: 200px;
 }
-h2{
-color: darkblue;
 
+rating {
+    font-size: 48px;
+    color: darkorange;
 }
-h4{
+
+.followers-num,
+.company-name {
+    font-weight: 700;
+}
+
+.edit-div {
+    border: 1px solid darkblue;
+    padding: 0px 0px 0px 10px;
+    float: right;
+}
+
+.edit-text {
+    font-weight: 550;
+    color: blueviolet;
+    float: left;
+}
+
+.rateOfRivew {
+    background-color: darkorange;
+    float: right;
+    color: white;
+}
+
+.numOfRivew {
+    padding-top: 40px;
+    float: right;
+    margin-right: -35px;
+}
+
+.glyphicon-cog {
+    background-color: darkblue;
+    color: white;
+    border-radius: 0;
+    float: right;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+
+h2,
+h4,
+h3 {
     color: darkblue;
-    
-    }
-    h3{
-        color: darkblue;
-        
-        }
+}
