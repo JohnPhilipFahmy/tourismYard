@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 20px;
+}
+
+legend {
+    padding: 5px;
+}
+
+.glyphicon-plus-sign {
+    font-size: 35px;
+    color: darkorange;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.width-10 {
+    width: 10%;
+}

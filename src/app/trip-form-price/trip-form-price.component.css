@@ -1,0 +1,45 @@
+.container {
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 20px;
+}
+
+.label-text {
+    font-size: 20px;
+    padding-right: 10px;
+    color: darkblue;
+}
+
+.input-group-addon {
+    border-radius: 10%;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-left: 0px;
+    background-color: white;
+}
+
+.no-border-right {
+    border-right: 0px;
+}
+
+.input-group {
+    margin-right: 20px;
+}
+
+.form-control {
+    border-radius: 10%;
+}
+
+.input-group>.border10 {
+    border-radius: 10%;
+    height: 25px;
+}
+
+hr {
+    height: 1px;
+    background-color: gray;
+    width: 90%;
+}
+
+.offer {
+    background-color: darkorange;
+}
