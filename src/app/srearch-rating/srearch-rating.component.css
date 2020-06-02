@@ -1,7 +1,18 @@
-.rate-stars{
+.rate-stars, .money-sign{
     font-size: 20px;
     color: darkorange;
 }
 .label{
    font-size: 20px;
+}
+
+.dollar {
+  font-size: 16px;
+  padding: 10px 4px;
+}
+.dollar-yellow {
+  color: darkorange;
+}
+.dollar-black {
+  color: #333;
 }

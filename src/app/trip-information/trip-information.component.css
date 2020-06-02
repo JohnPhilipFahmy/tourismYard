@@ -1,76 +1,74 @@
-img{
-    padding:20px;
-}
-.imgDiv{
-    position:unset;
-    margin-top: -80px;
-
-}
-.numAndplaceIfo{
-    float: 0px;
-    margin-top: 20px;
-    margin-bottom:-50px;
-}
-.rivewRate{
-    background-color: darkorange;
-    float:right ;
-  
-}
-.numOfRivew{
-    float: right;
-   
-      margin-right: -35px;
-      padding-top: 30px;
-}
-.rate{
-    
-   
-    margin: 0px;
-    color: darkorange;
-    font-size: 40px;
-    
+img {
+  padding: 20px;
 }
 
-
-.tripDetail{
-    margin-top: 0px;
-    padding-top: 0px;
-
+.imgDiv {
+  position: unset;
+  margin-top: -80px;
 }
-li{
-    padding: 10px;
-    font-size: 20px;
 
+.numAndplaceIfo {
+  float: 0px;
+  margin-top: 20px;
+  margin-bottom: -50px;
 }
-.div-detail-right-btn{
 
-    float: right;
-    margin-right: 50px;
+.rivewRate {
+  background-color: darkorange;
+  float: right;
 }
-.Explore-btn{
-padding: 10px 20px;
-font-size: 15px;
-font-weight: 500;
 
+.numOfRivew {
+  float: right;
+  margin-right: -35px;
+  padding-top: 30px;
 }
-.custom-btn 
-{
-    font-size: 15px;
-    font-weight: 500;  
-}
-.heart-icon{
-    color: red; 
-    font-size: 45px;
- position: absolute;
- margin-top: 30px;
- margin-left: 250px;
-}
-.info-card{
-    
-border-radius: 0%;
-border-style: solid;}
 
-.info-card:hover{
-    background-color: aqua;
-   
+.rate {
+  margin: 0px;
+  color: darkorange;
+  font-size: 40px;
+}
+
+.tripDetail {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+li {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.div-detail-right-btn {
+  float: right;
+  margin-right: 50px;
+}
+
+.Explore-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.custom-btn {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.heart-icon {
+  color: red;
+  font-size: 45px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 250px;
+}
+
+.info-card {
+  border-radius: 0%;
+  border-style: solid;
+}
+
+.info-card:hover {
+  background-color: aqua;
 }

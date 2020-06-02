@@ -1,31 +1,23 @@
-<div class="row row-width p-top p-bottom-50" >
+<div class="row row-width p-top p-bottom-50">
 
   <form class="form-inline">
 
     <div class="form-group">
 
-      <div class="btn-group" dropdown >
-        <button  id="button-basic"
-          dropdownToggle
-          type="button"
-            class="btn btn-primary dropdown-toggle countryBtn"
-                aria-controls="dropdown-basic">
+      <div class="btn-group" dropdown>
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle countryBtn"
+          aria-controls="dropdown-basic">
 
-                <span class="glyphicon glyphicon-globe">
-                </span>
-                {{selectedCountery}}
-                 <span class="caret"></span>
+          <span class="glyphicon glyphicon-globe">
+          </span>
+          {{selectedCountery}}
+          <span class="caret"></span>
         </button>
-        <ul id="dropdown-basic" *dropdownMenu
-         class="dropdown-menu"
-            role="menu"
-            aria-labelledby="button-basic">
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
 
-          <li role="menuitem"
-           *ngFor="let countrey of counteries">
+          <li role="menuitem" *ngFor="let countrey of counteries">
 
-            <a class="dropdown-item"
-            (click)="selectCountery(countrey)">
+            <a class="dropdown-item" (click)="selectCountery(countrey)">
               <span class="glyphicon glyphicon-globe"></span>
               {{ countrey.text }}</a>
           </li>
@@ -36,116 +28,76 @@
 
     <div class="form-group">
       <div class="btn-group" dropdown>
-        <button id="button-basic"
-         dropdownToggle
-          type="button"
-           class="btn btn-primary dropdown-toggle"
-                aria-controls="dropdown-basic" >
-                <span class="glyphicon glyphicon-map-marker">
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+          aria-controls="dropdown-basic">
+          <span class="glyphicon glyphicon-map-marker">
 
-                </span>
-                {{selectedSpasificCountery}}
-                <span class="caret"></span>
+          </span>
+          {{selectedSpasificCountery}}
+          <span class="caret"></span>
         </button>
-        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu"
-            role="menu" aria-labelledby="button-basic">
-          <li role="menuitem"  *ngFor="let spasificcounterie of spasificcounteries">
-            <a class="dropdown-item"
-             (click)="selectSpasificCounteries(spasificcounterie)">
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+          <li role="menuitem" *ngFor="let spasificcounterie of spasificcounteries">
+            <a class="dropdown-item" (click)="selectSpasificCounteries(spasificcounterie)">
               {{ spasificcounterie.text }}</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="form-group" >
-
-      <input type="text"
-      placeholder=""
-      class="form-control"
-      #dpFrom="bsDatepicker"
-      bsDatepicker
-      [(ngModel)]="from"
-      name="from"
-      style="width: 0px;"
-      >
-     <button class="btn btn-primary fromBtn"
-      (click)="dpFrom.toggle()"
-
-     >
-     <span class="glyphicon glyphicon-calendar">
-
-     </span>
-     {{from|date}}</button>
-    </div>
-
-<div class="form-group arrow">
-<div >
-<i class=" glyphicon glyphicon-arrow-right">
-  </i>
-</div>
-</div>
     <div class="form-group">
-      <input type="text"
 
-      class="form-control"
-      placeholder="Datepicker"
-      bsDatepicker
+      <input type="text" placeholder="" class="form-control" #dpFrom="bsDatepicker" bsDatepicker [(ngModel)]="from"
+        name="from" style="width: 0px;">
+      <button class="btn btn-primary fromBtn" (click)="dpFrom.toggle()">
+        <span class="glyphicon glyphicon-calendar">
 
-      #dpto="bsDatepicker"
-      bsDatepicker
-      [(ngModel)]="To"
-      name="To"
-      style="width:0px;"
-      />
-
-      <button class="btn btn-primary ToBtn"
-      (click)="dpto.toggle()"
-
-      >
-      <span class="glyphicon glyphicon-calendar"></span>
-
-      {{To|date}}</button>
-
-    </div>
-    <div class="form-group personDiv"
-    >
-
-    <div class="form-group"
-    >
-      <span class="glyphicon glyphicon-user"
-    ></span>
+        </span>
+        {{from|date}}</button>
     </div>
 
-    <div class="form-group increamentDiv" >
-      <span class=" glyphicon glyphicon-chevron-up"
+    <div class="form-group arrow">
+      <div>
+        <i class=" glyphicon glyphicon-arrow-right">
+        </i>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Datepicker" bsDatepicker #dpto="bsDatepicker" bsDatepicker
+        [(ngModel)]="To" name="To" style="width:0px;" />
 
-    (click)="increament()"
-    ></span>
+      <button class="btn btn-primary ToBtn" (click)="dpto.toggle()">
+        <span class="glyphicon glyphicon-calendar"></span>
+
+        {{To|date}}</button>
+
+    </div>
+    <div class="form-group personDiv">
+
+      <div class="form-group">
+        <span class="glyphicon glyphicon-user"></span>
+      </div>
+
+      <div class="form-group increamentDiv">
+        <span class=" glyphicon glyphicon-chevron-up" (click)="increament()"></span>
+      </div>
+
+      <div class="form-group arrow-down">
+        <span class=" glyphicon glyphicon-chevron-down" style="color: saddlebrown;font-size:20px;"
+          (click)="decreament()"></span>
+      </div>
+
+      <div class="form-group" style="margin-left:-35px;">
+        <span class="counter">
+          {{ " "+counter+" "+"adult"+"  " }}
+        </span>
+      </div>
+
     </div>
 
-    <div class="form-group" style="margin-bottom: -33px;margin-left:-20px;">
-      <span class=" glyphicon glyphicon-chevron-down"
-    style="color: saddlebrown;font-size:20px;"
-    (click)="decreament()"
-    ></span>
-    </div>
-
-    <div class="form-group" style="margin-left:-35px;">
-      <span class="counter" >
-        {{ " "+counter+" "+"adult"+"  " }}
-      </span>
-    </div>
-
-  </div>
-
-    <button [routerLink]="['/search']"
-     [queryParams]="{countrey: selectedCounteryID,
+    <button [routerLink]="['/search']" [queryParams]="{countrey: selectedCounteryID,
       Capital:selectedSpasificCounteryId,
       fromDate:from,toDate:To,
-      persons:counter}"
-       type="submit"
-       class="btn btn-warning searchBtn"
-    >SEARCH</button>
+      persons:counter}" type="submit" class="btn btn-warning searchBtn">SEARCH</button>
   </form>
 </div>

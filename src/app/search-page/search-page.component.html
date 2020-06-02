@@ -1,24 +1,20 @@
-<div >
-  <app-slider></app-slider>
-  <app-search ></app-search>
+<div>
+  <app-search></app-search>
   <app-srearch-rating></app-srearch-rating>
   <app-trip-information></app-trip-information>
 
-  
-    <div class=" center-item ">
 
-      <pagination [totalItems]="155"
-       [rotate]="rotate" 
-       [maxSize]="maxSize"
-      (pageChanged)="pageChanged($event)"
-       ></pagination>
-    </div>
-    <div class=" container p-bottom-50">
+  <div class=" center-item ">
 
-    <h3 class="m-right-5 title-text m-top-50" > 
-     Recommended for you
-     </h3>
-</div>
+    <pagination [totalItems]="155" [rotate]="rotate" [maxSize]="maxSize" (pageChanged)="pageChanged($event)">
+    </pagination>
+  </div>
+  <div class=" container p-bottom-50">
+
+    <h3 class="m-right-5 title-text m-top-50">
+      Recommended for you
+    </h3>
+  </div>
 
   <app-search-slide></app-search-slide>
 </div>

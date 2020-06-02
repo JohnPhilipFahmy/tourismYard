@@ -1,72 +1,85 @@
-.btn{
-    height: 45px;
+.btn {
+  height: 45px;
 }
 
 .row-width {
   width: 749px;
   border-radius: 35px;
   /* width: 90%; */
-  height:45px;
+  height: 45px;
   margin-left: auto;
-margin-right: auto;
-/* padding: -10px; */
+  margin-right: auto;
+  /* padding: -10px; */
 }
 
+.dropdown-toggle {
+  margin-right: -2px;
+  width: 150px;
+  background-color: blueviolet;
+}
 
-.dropdown-toggle{
-    margin-right: -2px;
-    width: 150px;
-    background-color:blueviolet ;
+.countryBtn {
+  border-radius: 0px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
+.glyphicon {
+  color: red;
 }
-.countryBtn{
 
-    border-radius: 0px;
-    border-top-left-radius:20px;
-    border-bottom-left-radius: 20px;
+.fromBtn, .ToBtn {
+  border-radius: 0px;
+  margin-left: -28px;
 }
-.glyphicon{color:red;}
-.fromBtn ,.ToBtn{border-radius: 0px;
 
-    margin-left: -28px;
+.glyphicon-calendar {
+  color: saddlebrown;
 }
-.glyphicon-calendar{
-    color:  saddlebrown;
-}
-.arrow{
-    padding-top: 8px;
-    height: 45px;
-    background-color:blueviolet ;
-}
-.glyphicon-arrow-right{
 
-    font-size:30px;
-    color: saddlebrown;
-    height: 50;
+.arrow {
+  padding-top: 8px;
+  height: 45px;
+  background-color: blueviolet;
 }
-.personDiv{padding-top: 9px;
-    width: 85px;
-    height: 45px ;
-    background-color:blueviolet ;
-}
-.increamentDiv{
-    margin-top: -25px;
-    margin-left:20px;
-}
-.glyphicon-chevron-up{
 
-    color: saddlebrown;
-    font-size:20px;
+.glyphicon-arrow-right {
+  font-size: 30px;
+  color: saddlebrown;
+  height: 50;
 }
-.counter{
-    color: white;
-    font-size: 15px;
+
+.personDiv {
+  padding-top: 9px;
+  width: 10%;
+  height: 45px;
+  background-color: blueviolet;
 }
-.searchBtn
-{
-    background-color:  darkorange;
-    width: 100px;
-    border-radius: 0px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+
+.increamentDiv {
+  margin-top: -25px;
+  margin-left: 20px;
+}
+
+.glyphicon-chevron-up {
+  color: saddlebrown;
+  font-size: 20px;
+}
+
+.arrow-down {
+  margin-bottom: -33px;
+  margin-left: -20px;
+}
+
+.counter {
+  color: white;
+  font-size: 15px;
+}
+
+.searchBtn {
+  background-color: darkorange;
+  width: 100px;
+  border-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

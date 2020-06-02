@@ -3,23 +3,18 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-single-trip-bar',
   templateUrl: './single-trip-bar.component.html',
-  styleUrls: ['./single-trip-bar.component.css']
+  styleUrls: ['./single-trip-bar.component.css'],
 })
 export class SingleTripBarComponent implements OnInit {
-  isEmpty=true;
-  constructor() { }
+  Like = true;
+  numOfDays = 9;
+  TripPlace = 'Africa Ltinerary';
+  numOfRivew = 220;
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  liked() {
+    this.Like = !this.Like;
   }
-  numOfDays=9;
-  TripPlace="Africa Ltinerary";
-  numOfRivew=220
-  liked(){
-    if(this.isEmpty===true)
-    {
-      this.isEmpty=false;
-    }
-    else{this.isEmpty=true}
-    
-      }
 }

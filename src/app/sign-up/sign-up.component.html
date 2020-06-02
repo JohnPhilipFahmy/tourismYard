@@ -1,135 +1,103 @@
-<div class="container p-top p-bottom-50 center-item"   >
+<div class="container p-top p-bottom-50 center-item">
   <div class="row ">
-  
-<form [formGroup]='form'>
-    <fieldset>
-      <legend>sign up</legend>
-      <label class="col-form-label col-form-label-lg " for="inputLarge" >user name</label>
-      <div class="form-group user-name" >
-        <input class="form-control form-control-lg firstName" 
-        type="text" 
-        placeholder="first name" 
-        id="inputLarge"
-        formControlName="userNameFN"
-        >
 
-        <input class="form-control form-control-lg lastName" 
-        formControlName="userNameLN"
-        type="text" placeholder="last name" id="inputLarge">
-    </div>
-    <br>
-    <div id="userNameFNErrorMsg" 
-    class="userNameFNErrorMsg"
-    *ngIf="userNameFN.touched && userNameFN.invalid || userNameLN.touched && userNameLN.invalid "
-    >
-    <p >user name is required !</p>
-  </div>
-     
-      <div class="form-group email-input" >
-        <label for="exampleInputEmail1">Email address</label>
-        <input 
-        type="email"
-         class="form-control"
-          id="email"
-       
-        formControlName="email"   
-          placeholder="Enter email">
-        <div id="emailErrorMsg" 
-        class="emailErrorMsg"
-        *ngIf="email.touched && email.invalid"
-        >Email is required !
-      </div>
-      </div>
+    <form [formGroup]='form'>
+      <fieldset>
+        <legend>sign up</legend>
+        <label class="col-form-label col-form-label-lg " for="inputLarge">user name</label>
+        <div class="form-group user-name">
+          <input class="form-control form-control-lg firstName" type="text" placeholder="first name" id="inputLarge"
+            formControlName="userNameFN">
 
-
-      <div class="form-group">
-        <label class="col-form-label col-form-label-lg"
-        
-        for="inputLarge">phone number</label>
-        <input class="form-control form-control-lg"
-        formControlName="PhoneNumber" 
-        type="text" placeholder="phone number" id="inputLarge">
-        <div id="PhoneNumberErrorMsg" 
-        class="PhoneNumberErrorMsg"
-        *ngIf="PhoneNumber.touched && PhoneNumber.invalid"
-        >Phone number is required !
-      </div>
-      </div>
-
-
-      
-      <div class="form-group">
-        <label
-         for="password">Password</label>
-        <input type="password"
-         class="form-control"
-          id="password"
-          formControlName="password"
-          placeholder="Password">
-          <div id="emailErrorMsg" 
-          class="emailErrorMsg"
-          *ngIf="password.touched && password.invalid"
-          >Password is required !
+          <input class="form-control form-control-lg lastName" formControlName="userNameLN" type="text"
+            placeholder="last name" id="inputLarge">
         </div>
-      </div>
-   
-      <div class="form-group">
-        <label for="exampleInputPassword1">Confirm your password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
-      </div>
-   
-    
-      <fieldset class="form-group">
-        <legend>Gender</legend>
-        <div class="radio-inline">
-          <label class="radio-inline">
-            <input type="radio"
-             name="optradio" >Male
-            </label>
+        <br>
+        <div id="userNameFNErrorMsg" class="userNameFNErrorMsg"
+          *ngIf=" getFormcontrol('userNameFN').touched && getFormcontrol('userNameFN').invalid || userNameLN.touched && userNameLN.invalid ">
+          <p>user name is required !</p>
         </div>
-        <div class="radio-inline">
-          <label class="radio-inline">
-            <input type="radio" name="optradio">Female
-          </label>
-        </div>
-      </fieldset>
-    
 
-      <label for="sel1"> Birthday</label>
+        <div class="form-group email-input">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email">
+          <div id="emailErrorMsg" class="emailErrorMsg" *ngIf="email.touched && email.invalid">Email is required !
+          </div>
+        </div>
+
+
         <div class="form-group">
-            
-          <select class="form-control Bd-day float-left m-right-10  " id="day"
-         
-          >
-          
-            <option  *ngFor="let BdDay of BdDays">
-             {{BdDay.day}}
+          <label class="col-form-label col-form-label-lg" for="inputLarge">phone number</label>
+          <input class="form-control form-control-lg" formControlName="PhoneNumber" type="text"
+            placeholder="phone number" id="inputLarge">
+          <div id="PhoneNumberErrorMsg" class="PhoneNumberErrorMsg" *ngIf="PhoneNumber.touched && PhoneNumber.invalid">
+            Phone number is required !
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+          <div id="emailErrorMsg" class="emailErrorMsg" *ngIf="password.touched && password.invalid">Password is
+            required !
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Confirm your password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm password">
+        </div>
+
+
+        <fieldset class="form-group">
+          <legend>Gender</legend>
+          <div class="radio-inline">
+            <label class="radio-inline">
+              <input type="radio" name="optradio">Male
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label class="radio-inline">
+              <input type="radio" name="optradio">Female
+            </label>
+          </div>
+        </fieldset>
+
+
+        <label for="sel1"> Birthday</label>
+        <div class="form-group">
+
+          <select class="form-control Bd-day float-left m-right-10  " id="day">
+
+            <option *ngFor="let BdDay of BdDays">
+              {{BdDay.day}}
             </option>
-          
+
           </select>
           <select class="form-control Bd-month float-left m-right-10" id="month">
-            <option  *ngFor="let BdMonth of BdMonths">
-                {{BdMonth.Month}}
-               </option>
-            
+            <option *ngFor="let BdMonth of BdMonths">
+              {{BdMonth.Month}}
+            </option>
+
           </select>
           <select class="form-control Bd-year float-left  " id="year">
-            <option  *ngFor="let BdYear of BdYears">
-                {{BdYear.Year}}
-               </option>
+            <option *ngFor="let BdYear of BdYears">
+              {{BdYear.Year}}
+            </option>
           </select>
-         
+
         </div>
-     
-       
 
 
-      <div class="submitDiv">
-      <button type="submit" class="btn btn-primary">sign up</button>
-    </div>
-    </fieldset>
-  </form>
+
+
+        <div class="submitDiv">
+          <button type="submit" class="btn btn-primary">sign up</button>
+        </div>
+      </fieldset>
+    </form>
   </div>
- 
-</div>
 
+</div>

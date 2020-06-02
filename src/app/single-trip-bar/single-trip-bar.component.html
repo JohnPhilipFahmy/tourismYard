@@ -1,39 +1,32 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 <div class="container p-top">
-   
-       <h3 class="tripTitle">
-        {{numOfDays}} Days in {{TripPlace}}
+
+  <h3 class="tripTitle">
+    {{numOfDays}} Days in {{TripPlace}}
+  </h3>
+
+  <button type="button" class="btn btn-warning">
+    BOOK NOW
+
+  </button>
+
+
+  <div class="no-p">
+    <h3 class="rate-num">
+      8.2
     </h3>
 
-        <button type="button"  class="btn btn-warning">
-           BOOK NOW
-        
-        </button>
-        
-       
-          <div
-          class="no-p">
-            <h3 
-             class="rate-num">
-                8.2
-              </h3>
-            
-            </div>
-            <h4
-              class="numOfRivew">
-                {{numOfRivew}} Rivew
-              </h4>
-        <span class="glyphicon"
-        [class.glyphicon-heart-empty]="isEmpty"
-        [class.glyphicon-heart]="!isEmpty"
-        (click)='liked()'>
-      </span> 
-      <span class="material-icons glyphicon">
-      &#xe80d;
-    </span> 
-        
-      </div>
+  </div>
+  <h4 class="numOfRivew">
+    {{numOfRivew}} Rivew
+  </h4>
+  <span class="glyphicon" [ngClass]="{
+    'glyphicon-heart-empty': Like,
+    'glyphicon-heart':!Like
 
-  
-  
+  }" (click)='liked()'>
+  </span>
+  <span class="material-icons glyphicon">
+    &#xe80d;
+  </span>
+
+</div>

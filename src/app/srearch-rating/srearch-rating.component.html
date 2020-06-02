@@ -8,9 +8,9 @@
               <b>(<i>Price:</i> {{y*500}} $)</b>
             </div>
             <ng-template #tt let-i="index" let-v="value">
-              <pre class="btn btn-{{i < v ? 'warning' : 'default'}}">
-                {{i < v ? '&#36;' : '&#36;'}}
-              </pre>
+              <span class="dollar dollar-{{i < v ? 'yellow' : 'black'}}">
+                $
+              </span>
             </ng-template>
           </div>
 

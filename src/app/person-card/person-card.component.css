@@ -1,91 +1,78 @@
-.container{
-    border: 2px solid blueviolet;
-    border-radius:0% ;
-
+.container {
+  border: 2px solid blueviolet;
+  border-radius: 0%;
 }
 
-.profile-img{
-
-height: 200px;
-width: 200px;
+.profile-img {
+  height: 200px;
+  width: 200px;
 }
 
-.img{
-    border: 1px solid blueviolet;
-    
+.img {
+  border: 1px solid blueviolet;
 }
 
-h2{
-color: darkblue;
-
+h2 {
+  color: darkblue;
 }
-h4{
-    color: darkblue;
-    
-}
-.glyphicon-star , .glyphicon-camera{
 
-    font-size: 40px;
-     margin: 10px; 
+h4 {
+  color: darkblue;
+}
+
+.glyphicon-star, .glyphicon-camera {
+  font-size: 30px;
+  margin: 10px;
+  color: darkorange;
+  border: 1px solid blueviolet;
+  border-radius: 50%;
+  /* width: 64px; */
+  /* height: 65px; */
+  /* padding-top: 12px; */
+  /* padding-left: 12px; */
+  padding: 13px;
+}
+
+.rate-div {
+  border: 1px solid blueviolet;
+  border-radius: 50%;
+  /* width: 64px; */
+  /* height: 65px; */
+  /* margin-right: 45px; */
+  /* margin-top: 15px; */
+  /* padding-top: 5px; */
+  /* padding-left: 16px; */
+  /* float: right; */
+}
+
+.rate {
+  font-size: 25px;
     color: darkorange;
-    border: 1px solid blueviolet;
-    border-radius:50% ;
-    width: 64px;
-    height: 65px; 
-    padding-top: 12px;
-    padding-left: 12px;
-}
-.rate-div{
-    border: 1px solid blueviolet;
-    border-radius: 50%;
-    width: 64px;
-     height: 65px; 
-     margin-right: 45px;
-     margin-top: 15px;
-    padding-top: 5px;
-    padding-left: 16px;
-    
-    float: right;
-}
-.rate{
-
-    font-size: 20px;
-     color: darkorange;
-            margin-left: -10px;
-}
-th , td{
-    color: darkblue;
-
-    font-size:20px;
-}
-.followers-td{
-margin-left: -60px;
-
-}
-.edit-div{
-float: right;
-border: 2px solid blueviolet;
-padding:0px 0px 0px 15px;
-
+    margin-top: 15px;
+    display: block;
+    margin-left: 25px;
 }
 
-.glyphicon-cog{
-
-    padding: 5px;
-    font-size: 35px;
-    background-color: blueviolet;
-    color: white;
-    margin-left: 10px;
-    margin-top: -1px;
-
+th, td {
+  color: darkblue;
+  font-size: 20px;
 }
 
+.followers-td {
+  margin-left: -60px;
+}
 
+.edit-div {
+  float: right;
+  border: 2px solid blueviolet;
+  padding: 0px 0px 0px 15px;
+}
 
-
-
-
-
-
-
-
+.glyphicon-cog {
+  padding: 5px;
+  font-size: 35px;
+  background-color: blueviolet;
+  color: white;
+  margin-left: 10px;
+  margin-top: -1px;
+}

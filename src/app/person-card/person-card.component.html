@@ -1,68 +1,70 @@
 <div class="container p-bottom-30">
-    <div class="edit-div m-top-50">
-        
-        <span class="glyphicon glyphicon-cog">
-        </span>
-        <h4 class="float-left" >
-            Edit Profile
-        </h4>
-        
+  <div class="edit-div m-top-50">
+
+    <span class="glyphicon glyphicon-cog">
+    </span>
+    <h4 class="float-left">
+      Edit Profile
+    </h4>
+
+  </div>
+
+  <div class="col-sm-3 p-top">
+    <div>
+      <img [routerLink]="['/company-page']" src="assets/images/logo(blue).jpg"
+      class="img img-circle img-thumbnail profile-img">
     </div>
-    <div class="col-sm-3 p-top">
-        <img [routerLink]="['/company-page']"
-       src="assets/images/logo(blue).jpg"
-         class="img img-circle img-thumbnail profile-img">
-        <div class="p-top-10">
-            <i class="glyphicon glyphicon-star"></i>
-            <i class=" glyphicon glyphicon-camera"></i>
-            <div class="rate-div m-top-5">
-
-                <rating [(ngModel)]="rate" class="rate" [readonly]="isReadonly">
-                </rating>
-
-            </div>
-
-            <i class="glyphicon glyphicon-star"></i>
-            <i class=" glyphicon glyphicon-camera"></i>
-            <div class="rate-div  m-top-10">
-
-                <rating [(ngModel)]="rate" 
-                [readonly]="isReadonly" class="rate">
-                </rating>
-
-            </div>
-
-
+      <rating [(ngModel)]="traveller.rate" class="rate" [readonly]="traveller.isReadonly">
+      </rating>
+    <div class="p-top-10">
+      <div class="row">
+        <div class="col-md-6">
+          <i class="glyphicon glyphicon-star"></i>
         </div>
+        <div class="col-md-6">
+          <i class=" glyphicon glyphicon-camera"></i>
+        </div>
+      </div>
 
-
+      <div class="row">
+        <div class="col-md-6">
+          <i class="glyphicon glyphicon-star"></i>
+        </div>
+        <div class="col-md-6">
+          <i class=" glyphicon glyphicon-camera"></i>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-7 p-top p-left-30">
-        <h2 class="p-bottom-30">
-            {{personName}}
-        </h2>
 
-        <table class="table ">
 
-            <tr>
-                <th>trips</th>
-                <th class="center-item">Followers</th>
-                <th>Following</th>
-            </tr>
+  </div>
 
-            <tr>
-                <td>{{tripsNum}}</td>
-                <td class="followers-td center-item">{{followers}}</td>
-                <td>{{following}}</td>
-            </tr>
+  <div class="col-sm-7 p-top p-left-30">
+    <h2 class="p-bottom-30">
+      {{traveller.personName}}
+    </h2>
 
-        </table>
+    <table class="table ">
 
-        <h4>
-            {{description}}
-        </h4>
-    </div>
- 
-   
+      <tr>
+        <th>trips</th>
+        <th class="center-item">Followers</th>
+        <th>Following</th>
+      </tr>
+
+      <tr>
+        <td>{{traveller.tripsNum}}</td>
+        <td class="followers-td center-item">{{traveller.followers}}</td>
+        <td>{{traveller.following}}</td>
+      </tr>
+
+    </table>
+
+    <h4>
+      {{traveller.description}}
+    </h4>
+  </div>
+
+
 
 </div>

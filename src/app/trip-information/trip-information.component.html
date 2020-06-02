@@ -1,92 +1,64 @@
-<div class="container no-p info-card m-bottom-50" 
- *ngFor="let tripInfo of tripsInfo">
-
-    <div class="col-sm-4 "
- 
-    >
-       <div>
-           
-                <span class="glyphicon heart-icon" 
-                [class.glyphicon-heart-empty]="isEmpty" 
-                [class.glyphicon-heart]="!isEmpty" 
-                (click)='liked()'>
-            </span>
-       
-            <img 
-           
-            src="assets/images/searchSlide1.jpg">
-             </div>
-              
-            
-        
+<div class="container no-p info-card m-bottom-50" *ngFor="let tripInfo of tripsInfo">
+  <div class="col-sm-4 ">
+    <div>
+      <span class="glyphicon heart-icon"
+        [ngClass]="{
+          'glyphicon-heart-empty': !tripInfo.Like,
+          'glyphicon-heart': tripInfo.Like
+        }" (click)='liked(tripInfo)'>
+      </span>
+      <img src="assets/images/searchSlide1.jpg">
     </div>
 
+  </div>
 
-    <div class="col-sm-8 p-top">
-       
-
-            <div class="p-left-10">
-                <h4 class="numAndplaceIfo">
-                    {{tripInfo.numOfDays}} days in 
-                    {{tripInfo.place}} ltinerary
-                </h4>
-
-
-                <h3 class="rivewRate">
-                   
-                        8.2
-                </h3>
-                   <h3 class="numOfRivew">
-                        {{tripInfo.numOfRivew}} Rivew
-                </h3>
-                <div class="rateDiv p-top" >
-                <rating [(ngModel)]="rate"
-                 [max]="max"
-                 [readonly]="isReadonly"
-                 class="rate"
-                   >
-                </rating>
-            </div>
-
-            </div>
-
-            <div >
-                <ul class="nav"
-               >
-
-                    <li>
-                     {{tripInfo.TripDetail1}}
-                    </li>
-                    <li>
-                        {{tripInfo.TripDetail2}}
-                       </li>
-                       <li>
-                        {{tripInfo.TripDetail3}}
-                       </li>
-                       <li>
-                        {{tripInfo.TripDetail4}}
-                       </li>
-                  </ul>
-               
-               
-            </div>
-
-            <div  class="p-top p-bottom-30 p-left-10">
-
-                <button type="button" 
-                class="btn no-border Explore-btn" >
-                Explore More
-                </button>
-                <div  class="div-detail-right-btn">
-                <button type="button" 
-                    class="btn btn-warning custom-btn">
-                           {{tripInfo.numOfDays}} days $ {{tripInfo.price}}
-                </button>
-                </div>
-            </div>
-     
+  <div class="col-sm-8 p-top">
+    <div class="p-left-10">
+      <h4 class="numAndplaceIfo">
+        {{tripInfo.numOfDays}} days in
+        {{tripInfo.place}} ltinerary
+      </h4>
+      <h3 class="rivewRate">
+        8.2
+      </h3>
+      <h3 class="numOfRivew">
+        {{tripInfo.numOfRivew}} Rivew
+      </h3>
+      <div class="rateDiv p-top">
+        <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" class="rate">
+        </rating>
+      </div>
 
     </div>
+
+    <div>
+      <ul class="nav">
+        <li>
+          {{tripInfo.TripDetail1}}
+        </li>
+        <li>
+          {{tripInfo.TripDetail2}}
+        </li>
+        <li>
+          {{tripInfo.TripDetail3}}
+        </li>
+        <li>
+          {{tripInfo.TripDetail4}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-top p-bottom-30 p-left-10">
+      <button type="button" class="btn no-border Explore-btn">
+        Explore More
+      </button>
+      <div class="div-detail-right-btn">
+        <button type="button" class="btn btn-warning custom-btn">
+          {{tripInfo.numOfDays}} days $ {{tripInfo.price}}
+        </button>
+      </div>
+    </div>
+
+  </div>
 
 </div>
-
