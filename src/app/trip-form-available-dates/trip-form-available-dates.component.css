@@ -1,4 +1,4 @@
-.container {
+.available-Dates {
     border: 1px solid rgb(92, 20, 20);
     border-radius: 20px;
     padding: 25px;
@@ -15,10 +15,7 @@ h3 {
     font-weight: 800;
     color: darkblue;
     padding: 5px;
-}
-
-h4 {
-    padding-top: 5px;
+    padding-left: 12px;
 }
 
 .form-control {
@@ -33,4 +30,14 @@ legend {
 .glyphicon-plus-sign {
     font-size: 35px;
     color: darkorange;
+}
+
+legend {
+    border-bottom: 0px;
+    color: darkblue;
+    padding-left: 0px;
+}
+
+.p-left-0 {
+    padding-left: 0px;
 }

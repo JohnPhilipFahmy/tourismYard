@@ -1,69 +1,72 @@
-<div class="p-top">
-    <div class="container">
+<div class="accommodation m-bottom-50">
 
-        <legend>
-            <h3 class="float-left title-text">Accommodation</h3>
-            <i class="glyphicon glyphicon-plus-sign ">
+    <legend>
+        <h3 class="float-left title-text">Accommodation</h3>
+        <i class="glyphicon glyphicon-plus-sign ">
             </i>
-        </legend>
+    </legend>
+    <div class="row">
 
-        <form class="form-inline">
-            <div class="form-group col-xs-12">
-                <label for="focusedInput">
+        <div class="col-xs-2 p-top-30">
+            <label for="focusedInput">
                     <h4>
                     Hotel
                 </h4>
                 </label>
-                <input class="form-control
+        </div>
+        <div class="col-xs-10 p-top-30">
+            <input class="form-control
                  input-lg" id="focusedInput" type="text">
-            </div>
-            <div class="form-group col-xs-2 p-top-30">
-                <label for="focusedInput">
+        </div>
+
+        <div class=" col-xs-2 p-top-30">
+            <label for="focusedInput">
                     <h4>
                     Day
                 </h4>
                 </label>
-                <select class="form-control" id="exampleSelect1">
+        </div>
+        <div class="col-xs-2 p-top-30">
+            <select class="form-control" id="exampleSelect1">
                     <option *ngFor="let day of days">
                         {{day}}
                     </option>
                 </select>
-            </div>
+        </div>
 
-            <div class="form-group col-xs-10 p-top-30">
-                <label class="radio-inline">
+        <div class="form-group col-xs-8  p-top-30">
+            <label class="radio-inline">
                 <input type="radio" name="optradio"
                  checked>
                  <h4>
                  Full board
                 </h4>
                 </label>
-                <label class="radio-inline">
+            <label class="radio-inline">
                 <input type="radio" name="optradio">
                 <h4>
                     Half board
                    </h4>
               </label>
-            </div>
-            <div class="form-group col-xs-2 ">
+        </div>
+        <div class=" col-xs-4  p-top-30">
 
 
-            </div>
+        </div>
 
-            <div class="form-group col-xs-10 p-bottom-50 p-top-30">
-                <label class="radio-inline">
+        <div class="form-group col-xs-8  p-top-30">
+            <label class="radio-inline">
             <input type="radio" name="optradio" checked>
             <h4>
                 All inclusev
                </h4>
           </label>
-                <label class="radio-inline">
+            <label class="radio-inline">
             <input type="radio" name="optradio">
             <h4>
                 Breakfast Only
                </h4>
           </label>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
