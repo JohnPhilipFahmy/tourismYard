@@ -9,13 +9,12 @@
     padding-bottom: 20px;
 }
 
-h4,
-h3 {
+h5,
+.label-text {
     margin: 0px;
-    font-weight: 800;
+    font-weight: 600;
     color: darkblue;
     padding: 5px;
-    padding-left: 12px;
 }
 
 .form-control {
@@ -30,6 +29,8 @@ legend {
 .glyphicon-plus-sign {
     font-size: 35px;
     color: darkorange;
+    padding-top: 16px;
+    padding-left: 10px;
 }
 
 legend {
