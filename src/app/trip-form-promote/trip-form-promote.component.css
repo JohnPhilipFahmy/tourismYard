@@ -1,0 +1,23 @@
+.promote-contant {
+    background-color: darkorange;
+    border: 1px solid rgb(92, 20, 20);
+    border-radius: 20px;
+    width: 75%;
+}
+
+.title-text {
+    border-bottom: 0;
+    color: white;
+    font-weight: 700;
+}
+
+.p-right-40 {
+    padding-right: 40px;
+}
+
+label {
+    border-bottom: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}

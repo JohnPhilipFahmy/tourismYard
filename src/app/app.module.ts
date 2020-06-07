@@ -55,6 +55,7 @@ import { TripFormTripsComponent } from './trip-form-trips/trip-form-trips.compon
 import { TripFormTransportationComponent } from './trip-form-transportation/trip-form-transportation.component';
 import { TripFormPriceComponent } from './trip-form-price/trip-form-price.component';
 import { TripFormPaymentComponent } from './trip-form-payment/trip-form-payment.component';
+import { TripFormPromoteComponent } from './trip-form-promote/trip-form-promote.component';
 
 
 @NgModule({
@@ -99,7 +100,8 @@ import { TripFormPaymentComponent } from './trip-form-payment/trip-form-payment.
     TripFormTripsComponent,
     TripFormTransportationComponent,
     TripFormPriceComponent,
-    TripFormPaymentComponent
+    TripFormPaymentComponent,
+    TripFormPromoteComponent
   ],
   imports: [
     BrowserModule,
