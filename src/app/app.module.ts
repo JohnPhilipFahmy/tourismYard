@@ -10,10 +10,14 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
 import { ShareIconsModule } from 'ngx-sharebuttons/icons';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+
+
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { SliderComponent } from './slider/slider.component';
@@ -108,6 +112,7 @@ import { TripFormPromoteComponent } from './trip-form-promote/trip-form-promote.
     BrowserModule,
     BrowserAnimationsModule,
     TabsModule.forRoot(),
+    ModalModule.forRoot(),
     ShareButtonsModule,
     ShareIconsModule,
     ButtonsModule.forRoot(),

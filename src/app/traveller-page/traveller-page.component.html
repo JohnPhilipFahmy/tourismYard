@@ -1,3 +1,6 @@
 <div class="container p-top">
-<app-person-card></app-person-card>
-<app-person-page-body></app-person-page-body>
+    <app-person-card></app-person-card>
+    <pre *ngIf="auth.userProfile$ | async as profile">
+    <code>{{ profile | json }}</code>
+    </pre>
+    <app-person-page-body></app-person-page-body>

@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav navbar-right ">
                 <li><a [routerLink]="['/Add-trip']" class="white-text">Add trip</a></li>
                 <li>
-                    <a [routerLink]="['/traveller-Page']" class="white-text">
+                    <a [routerLink]="['/traveller-Page']" *ngIf="auth.loggedIn" class="white-text">
                         <i class="glyphicon glyphicon-user"></i>
                     </a>
                 </li>
@@ -26,7 +26,9 @@
                 <li><a [routerLink]="['/how-it-work']" class="white-text">How It Work</a></li>
                 <li><a [routerLink]="['/blog']" class="white-text">Blog</a></li>
                 <li><a [routerLink]="['/signUp']" class="white-text">Signup</a></li>
-                <li><a [routerLink]="['/logIn']" class="white-text">Login</a></li>
+                <li> <button (click)="auth.login()" *ngIf="!auth.loggedIn">Log In</button></li>
+
+                <li> <button (click)="auth.logout()" *ngIf="auth.loggedIn">Log Out</button></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

@@ -13,7 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { TravellerPageComponent } from './traveller-page/traveller-page.component';
 import { CompanyPageComponent } from './company-page/company-page.component';
 import { AddTripFormComponent } from './add-trip-form/add-trip-form.component';
-
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,7 +25,7 @@ const routes: Routes = [
   {path: 'signUp', component: SignUpComponent},
   {path: 'logIn', component: LoginComponent},
   {path: 'single-trip/:id', component: SingleTripPageComponent},
-  {path: 'traveller-Page', component: TravellerPageComponent},
+  {path: 'traveller-Page', component: TravellerPageComponent, canActivate: [AuthGuard]},
   {path: 'Add-trip', component: AddTripFormComponent},
   {path: 'company-page', component: CompanyPageComponent}
 ];

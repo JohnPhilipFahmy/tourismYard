@@ -1,32 +1,42 @@
 <div class="container p-top">
 
-  <h3 class="tripTitle">
-    {{numOfDays}} Days in {{TripPlace}}
-  </h3>
+    <h3 class="tripTitle">
+        {{numOfDays}} Days in {{TripPlace}}
+    </h3>
 
-  <button type="button" class="btn btn-warning">
+    <button type="button" class="btn btn-warning">
     BOOK NOW
 
   </button>
 
 
-  <div class="no-p">
-    <h3 class="rate-num">
-      8.2
-    </h3>
+    <div class="no-p">
+        <h3 class="rate-num">
+            8.2
+        </h3>
 
-  </div>
-  <h4 class="numOfRivew">
-    {{numOfRivew}} Rivew
-  </h4>
-  <span class="glyphicon" [ngClass]="{
+    </div>
+    <h4 class="numOfRivew">
+        {{numOfRivew}} Rivew
+    </h4>
+
+    <span class="glyphicon" [ngClass]="{
     'glyphicon-heart-empty': Like,
     'glyphicon-heart':!Like
 
   }" (click)='liked()'>
   </span>
-  <span class="material-icons glyphicon">
-    &#xe80d;
-  </span>
+    <i class="fa fa-share-alt" (click)="openModal(template)">
+  </i>
 
+
+    <ng-template #template>
+        <div class="modal-header">
+
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+        </div>
+        <share-buttons [theme]="'circles-dark'" [include]="['facebook','messenger','whatsapp','email','copy']" [show]="17" [showText]="false"></share-buttons>
+    </ng-template>
 </div>
